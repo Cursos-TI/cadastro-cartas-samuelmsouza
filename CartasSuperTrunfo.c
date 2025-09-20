@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
@@ -10,7 +11,7 @@ int main() {
     // Dados das cartas, a carta 1 sera a carta a1 portanto todas as variaveis vão conter a1 no final do nome.
     // A carta número 2 será a carta b1 portanto suas variaveis vão conter b1 ao final do nome. 
         
-        char estado1[2], codigo1[5], cidade01[20], estadob1[2], codigob1[5], cidadeb1[20];
+        char estado1[2], codigo1[5], cidade01[50], estadob1[2], codigob1[5], cidadeb1[50];
         int populacaoa1, pontosturisticosa1, populacaob1, pontosturisticosb1;
         float areaa1, piba1, areab1, pibb1;
 
@@ -27,11 +28,14 @@ int main() {
         scanf ("%s", estado1);
 
         printf("Codigo da carta? \n");
-        scanf ("%s", &codigo1);
+        scanf ("%s", codigo1);
+        getchar();// para consumir o \n deixado pelo scan, estava pulando sem ler a entrada.
 
         printf("Nome da cidade? \n");
-        scanf("%s", &cidade01);
-
+        //scanf("%s", &cidade01);
+        fgets(cidade01, 50, stdin);
+        cidade01[strcspn(cidade01, "\n")] = '\0';//para retirar o \n adicionado pelo fgets
+        
         printf("População? \n");
         scanf("%d", &populacaoa1);
 
@@ -76,9 +80,11 @@ int main() {
 
         printf("Codigo da carta? \n");
         scanf("%s", codigob1);
+        getchar();
 
         printf("Nome da cidade? \n");
-        scanf("%s", cidadeb1);
+        fgets(cidadeb1, 50, stdin);
+        cidadeb1[strcspn(cidadeb1, "\n")] = '\0';
 
         printf("População? \n");
         scanf("%d", &populacaob1);
