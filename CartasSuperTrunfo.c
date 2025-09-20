@@ -30,22 +30,24 @@ int main() {
   scanf("%d", &populacaoa1);
 
   printf("Área km²? \n");
-  scanf("%.2f", &areaa1);
+  scanf("%f", &areaa1);
 
   printf("Número PIB? \n");
-  scanf("%.2f", &piba1);
+  scanf("%f", &piba1);
 
   printf("Número de pontos turísticos? \n");
   scanf("%d", &pontosturisticosa1);
+  
   // Área para exibição dos dados da cidade
-// exibição dos dados da crata n°1
+
+  // exibição dos dados da carta n°1
 
   printf("Estado: %s \n", estado1);
   printf("Codigo da carta: %s  \n", codigo1);
   printf("Cidade: %s \n", cidade01);
   printf("População: %d \n", populacaoa1);
-  printf("Área: %2f \n", areaa1);
-  printf("PIB: %2f \n", piba1);
+  printf("Área: %.2f KM² \n", areaa1);
+  printf("PIB: %.2f bilhões de reais \n", piba1);
   printf("Número de pontos turísticos: %d", pontosturisticosa1);
 
 
