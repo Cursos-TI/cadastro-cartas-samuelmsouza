@@ -17,6 +17,7 @@ int main() {
   // Área para entrada de dados
  
   // entrada de dados da carta n°1
+  printf("Peencha com os dados da primeira carta. \n");
   printf("Qual o estado? \n");
   scanf ("%s", estado1);
 
@@ -41,6 +42,7 @@ int main() {
   // Área para exibição dos dados da cidade
 
   // exibição dos dados da carta n°1
+  printf("Carta n°1: \n");
 
   printf("Estado: %s \n", estado1);
   printf("Codigo da carta: %s  \n", codigo1);
