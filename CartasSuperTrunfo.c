@@ -11,7 +11,7 @@ int main() {
     // Dados das cartas, a carta 1 sera a carta a1 portanto todas as variaveis vão conter a1 no final do nome.
     // A carta número 2 será a carta b1 portanto suas variaveis vão conter b1 ao final do nome. 
         
-        char estadoa1[2], codigoa1[5], cidadea1[50], estadob1[2], codigob1[5], cidadeb1[50];
+        char estadoa1[30], codigoa1[5], cidadea1[50], estadob1[30], codigob1[5], cidadeb1[50];
         int populacaoa1, pontosturisticosa1, populacaob1, pontosturisticosb1;
         float areaa1, piba1, areab1, pibb1;
 
@@ -25,7 +25,8 @@ int main() {
         printf("\n");
 
         printf("Qual o estado? \n");
-        scanf ("%s", estadoa1);
+        fgets(estadoa1, 30, stdin);
+        estadoa1[strcspn(estadoa1, "\n")] = '\0';
 
         printf("Codigo da carta? \n");
         scanf ("%s", codigoa1);
@@ -47,6 +48,7 @@ int main() {
 
         printf("Número de pontos turísticos? \n");
         scanf("%d", &pontosturisticosa1);
+        getchar();
                                                      
   // Área para exibição dos dados da cidade
 
@@ -76,7 +78,8 @@ int main() {
         printf("\n");
       
         printf("Qual o estado? \n");
-        scanf("%s", estadob1);
+        fgets(estadob1, 30, stdin);
+        estadob1[strcspn(estadob1, "\n")] = '\0';
 
         printf("Codigo da carta? \n");
         scanf("%s", codigob1);
