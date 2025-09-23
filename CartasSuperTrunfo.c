@@ -29,7 +29,7 @@ int main() {
 
         printf("Codigo da carta? \n");
         scanf ("%s", codigoa1);
-        getchar();// para consumir o \n deixado pelo scan, estava pulando sem ler a entrada.
+        getchar(); //para consumir o \n deixado pelo scan, estava pulando sem ler a entrada.
 
         printf("Nome da cidade? \n");
         //scanf("%s", &cidade01);
@@ -106,6 +106,9 @@ int main() {
         printf("Número de pontos turísticos? \n");
         scanf("%d", &pontosturisticosb1);
 
+        float densidadeb1 = (float) populacaob1 / areab1;
+        float percapitab1 = (float) pibb1 / areab1;
+ 
   // Área para exibição dos dados da cidade
 
     // Exibição dos dados da carta n°2
@@ -123,6 +126,8 @@ int main() {
         printf("Área; %.2f KM² \n", areab1);
         printf("PIB: %.2f bilhões de reais \n", pibb1);
         printf("Número de postos turísticos: %d \n", pontosturisticosb1);
+        printf("Densidade Populacional: %.2f km² \n", densidadeb1);
+        printf("PIB per capita: %.2f Reais \n", percapitab1);
 
 
 
