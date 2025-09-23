@@ -14,8 +14,7 @@ int main() {
         char estadoa1[30], codigoa1[5], cidadea1[50], estadob1[30], codigob1[5], cidadeb1[50];
         int populacaoa1, pontosturisticosa1, populacaob1, pontosturisticosb1;
         float areaa1, piba1, areab1, pibb1;
-
-
+    
 
   // Área para entrada de dados
                    
@@ -49,6 +48,11 @@ int main() {
         printf("Número de pontos turísticos? \n");
         scanf("%d", &pontosturisticosa1);
         getchar();
+
+        float densidadea1 = (float) populacaoa1 / areaa1;
+        float percapitaa1 = (float) piba1 / populacaoa1;
+
+
                                                      
   // Área para exibição dos dados da cidade
 
@@ -58,7 +62,7 @@ int main() {
         printf("Carta n°1: \n");
 
         printf("\n");
-
+      
         printf("Estado: %s \n", estadoa1);
         printf("Codigo da carta: %s  \n", codigoa1);
         printf("Cidade: %s \n", cidadea1);
@@ -66,7 +70,8 @@ int main() {
         printf("Área: %.2f KM² \n", areaa1);
         printf("PIB: %.2f bilhões de reais \n", piba1);
         printf("Número de pontos turísticos: %d \n", pontosturisticosa1);
-
+        printf("Densidade Populacional: %.2f hab/km² \n", densidadea1);
+        printf("PIB per capita: %.2f Reais \n", percapitaa1);
   //Área para entrada dos dados 
     
     // Entrada dos dados carta n°2
