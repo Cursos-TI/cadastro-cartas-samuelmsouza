@@ -115,14 +115,14 @@ int main() {
         float percapitab1 = (float) pibb1 / areab1;
         float densidadeinvertidab1 = (float) 1 / densidadeb1;
         float superpoderb1 = (float) populacaob1 + areab1 + pibb1 + percapitab1 + densidadeinvertidab1 + pontosturisticosb1;
-        int populacaoab, areaab, pibab, pontosab, densidadeab, percapitaab, superpoderab;
-        populacaoab = populacaoa1 > populacaob1;
-        areaab = areaa1 > areab1;
-        pibab = piba1 > pibb1;
-        pontosab = pontosturisticosa1 > pontosturisticosb1;
-        densidadeab = densidadea1 > densidadeb1;
-        percapitaab = percapitaa1 > percapitab1;
-        superpoderab = superpodera1 > superpoderb1;
+        //int populacaoab, areaab, pibab, pontosab, densidadeab, percapitaab, superpoderab;
+      //populacaoab = populacaoa1 > populacaob1;
+      //areaab = areaa1 > areab1;
+      //pibab = piba1 > pibb1;
+      //pontosab = pontosturisticosa1 > pontosturisticosb1;
+      //densidadeab = densidadea1 > densidadeb1;
+      //percapitaab = percapitaa1 > percapitab1;
+      //superpoderab = superpodera1 > superpoderb1;
         
 
   // Área para exibição dos dados da cidade
@@ -146,16 +146,38 @@ int main() {
         printf("PIB per capita: %.2f Reais \n", percapitab1);
         printf("Super poder: %2.f\n", superpoderb1);
         printf("\n");
-
+      
+      
+        // area de comparação das cartas
+        
+        
         printf("***Comparação da Cartas***\n");
+        printf("Atributo População \n");
         printf("\n");
-        printf("População: Carta 1 venceu Carta 2 (%d)\n", populacaoab);
-        printf("Área: Carta 1 venceu Carta 2 (%d)\n", areaab);
-        printf("PIB: Carta 1 venceu Carta 2 (%d)\n", pibab);
-        printf("Pontos túristicos: Carta 1 venceu Carta 2 (%d)\n", pontosab);
-        printf("Densidade: Carta 1 venceu Carta 2: (%d)\n", densidadeab);
-        printf("PIB per Capita: Carta 1 venceu Carta 2 (%d)\n", percapitaab);
-        printf("Super poder: Carta 1 venceu Carta 2 (%d)\n", superpoderab);
+       // O codigo a baixo é o do desafio nivel mestre do capitulo anterior.
+       //printf("População: Carta 1 venceu Carta 2 (%d)\n", populacaoab);
+       //printf("Área: Carta 1 venceu Carta 2 (%d)\n", areaab);
+       //printf("PIB: Carta 1 venceu Carta 2 (%d)\n", pibab);
+       //printf("Pontos túristicos: Carta 1 venceu Carta 2 (%d)\n", pontosab);
+       //printf("Densidade: Carta 1 venceu Carta 2: (%d)\n", densidadeab);
+       //printf("PIB per Capita: Carta 1 venceu Carta 2 (%d)\n", percapitaab);
+       //printf("Super poder: Carta 1 venceu Carta 2 (%d)\n", superpoderab);
+
+       if( populacaoa1 > populacaob1){
+        printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
+        printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
+        printf("Carta n°1 %s venceu! \n",cidadea1);
+       }
+       else {
+        printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
+        printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
+        printf("Carta n°2 %s venceu! \n",cidadeb1);
+        
+       }
+
+
+
+
 
   
 
