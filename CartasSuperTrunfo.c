@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>// para funcionar corretamente o strcspn.
-
+#include <stdlib.h>
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
@@ -150,7 +150,7 @@ int main() {
       
         // area de comparação das cartas
         
-        int escolha
+        int escolha;
         
         printf("***Comparação da Cartas*** \n");
 
@@ -159,36 +159,119 @@ int main() {
         printf("2. Área \n");
         printf("3. PIB \n");
         printf("4. Pontos turísticos \n");
-        printf("6. Densidade demográfica");
-        scanf("%d", %escolha);
+        printf("5. Densidade demográfica \n");
+        printf("Escolha: ");
+        scanf("%d", &escolha);
 
         switch (escolha)
         {
         case 1: 
-            if(populacaoa1 > populacaob1)
+            if (populacaoa1 > populacaob1)
             {
             printf("**População** \n");
             printf("Carta 1- %s: %d \n", cidadea1, populacaoa1);
             printf("Carta 2- %s: %d \n", cidadeb1, populacaob1);
             printf("Carta n°1 %s venceu! \n", cidadea1);
             }
-            if else(populacaoa1 == populacaob1)
+            else if (populacaoa1 == populacaob1)
             {
               printf("As cartas empataram! \n");
             }
-            else(populacaoa1 < populacaob1)
+            else 
             {
-              printf("**População**");
+              printf("**População** \n" );
               printf("Carta 1- %s: %d \n", cidadea1, populacaoa1);
               printf("Carta 2- %s: %d \n", cidadeb1, populacaob1);
-              printf("Carta n°2 %s venceu! \n", cidadeb1);
+              printf("Carta n°2 %s venceu! \n", cidadeb1);  
             }
           break;
 
           case 2:
+            if (areaa1 > areab1)
+            {
+            printf("**Área** \n");
+            printf("Carta 1- %s: %f \n", cidadea1, areaa1);
+            printf("Carta 2- %s: %f \n", cidadeb1, areab1);
+            printf("Carta n°1 %s venceu! \n", cidadea1);
+            }
+            else if ( areaa1 == areab1)
+            {
+            printf("As Cartas empataram! \n");
+            }
+            else
+            {
+            printf("**Área** \n");
+            printf("Carta 1- %s: %f \n", cidadea1, areaa1);
+            printf("Carta 2- %s: %f \n", cidadeb1, areab1);
+            printf("Carta n°2 %s venceu! \n", cidadeb1);
+            }
+          break;
+          
+          case 3:
+            if (piba1 > pibb1)
+            {
+            printf("**PIB**  \n");
+            printf("Carta 1- %s: %f \n", cidadea1, piba1);
+            printf("Carta 2- %s: %f \n", cidadea1, pibb1);
+            printf("Carta n°1 %s venceu! \n", cidadea1);
+            }
+            else if (piba1 == pibb1)
+            {
+            printf("As Cartas empataram! \n");
+            }
+            else 
+            {
+            printf("**PIB** \n");
+            printf("Carta 1- %s: %f \n", cidadea1, pibb1);
+            printf("Carta 2- %s: %f \n", cidadeb1, pibb1);
+            printf("Carta n°2 %s venceu! \n", cidadeb1);
+            }
+          break;
+            
+          case 4:
+          if (pontosturisticosa1 > pontosturisticosb1)
+          {
+           printf("**Pontos turísticos**");
+           printf("Carta 1- %s: %d \n", cidadea1, pontosturisticosa1);
+           printf("Carta 2- %s: %d \n", cidadeb1, pontosturisticosb1);
+           printf("Carta n°1 %s venceu! \n", cidadea1);
+          }
+          else if (pontosturisticosa1 == pontosturisticosb1)
+           {
+          printf("As Cartas empataram! \n");
+           }
+          else
+          {
+          printf("**Pontos turísticos** \n");
+          printf("Carta 1- %s: %d \n", cidadea1, pontosturisticosa1);
+          printf("Carta 2- %s: %d \n", cidadeb1, pontosturisticosb1);
+          printf("Carta n°2 %s venceu! \n", cidadeb1);
+          }
+        break;
 
-        
-        default;
+        case 5:
+          if (densidadea1 > densidadeb1)
+          {
+          printf("**Densidade Demográfica** \n");
+          printf("Carta 1- %s: %f \n", cidadea1, densidadea1);
+          printf("Carta 2- %s: %f \n", cidadeb1, densidadeb1);
+          printf("Carta n°1 %s venceu! \n", cidadea1);
+        }
+         else if (densidadea1 ==densidadeb1)
+         {
+          printf("As Cartas empataram! \n");
+         }
+         else
+         {printf("**Densidade Demográfica** \n");
+          printf("Carta 1- %s: %f \n", cidadea1, densidadea1);
+          printf("Carta 2- %s: %f \n", cidadeb1, densidadeb1);
+          printf("Carta n°2 %s venceu!\n", cidadeb1);
+        }
+        break;
+
+        default: 
+        {printf("Opção invalida! \n");
+        }
       }
           
         
