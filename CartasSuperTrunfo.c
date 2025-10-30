@@ -150,11 +150,61 @@ int main() {
       
         // area de comparação das cartas
         
+        int escolha
         
-        printf("***Comparação da Cartas***\n");
-        printf("Atributo População \n");
-        printf("\n");
-       // O codigo a baixo é o do desafio nivel mestre do capitulo anterior.
+        printf("***Comparação da Cartas*** \n");
+
+        printf("Escolha qual atributo você quer comparar! \n");
+        printf("1. População \n");
+        printf("2. Área \n");
+        printf("3. PIB \n");
+        printf("4. Pontos turísticos \n");
+        printf("6. Densidade demográfica");
+        scanf("%d", %escolha);
+
+        switch (escolha)
+        {
+        case 1: 
+            if(populacaoa1 > populacaob1)
+            {
+            printf("**População** \n");
+            printf("Carta 1- %s: %d \n", cidadea1, populacaoa1);
+            printf("Carta 2- %s: %d \n", cidadeb1, populacaob1);
+            printf("Carta n°1 %s venceu! \n", cidadea1);
+            }
+            if else(populacaoa1 == populacaob1)
+            {
+              printf("As cartas empataram! \n");
+            }
+            else(populacaoa1 < populacaob1)
+            {
+              printf("**População**");
+              printf("Carta 1- %s: %d \n", cidadea1, populacaoa1);
+              printf("Carta 2- %s: %d \n", cidadeb1, populacaob1);
+              printf("Carta n°2 %s venceu! \n", cidadeb1);
+            }
+          break;
+
+          case 2:
+
+        
+        default;
+      }
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        // codigo abaixo usado no nivel anterior
+        
+        //printf("Atributo População \n");
+        //printf("\n");
+       
+        // O codigo a baixo é o do desafio nivel mestre do capitulo anterior.
        //printf("População: Carta 1 venceu Carta 2 (%d)\n", populacaoab);
        //printf("Área: Carta 1 venceu Carta 2 (%d)\n", areaab);
        //printf("PIB: Carta 1 venceu Carta 2 (%d)\n", pibab);
@@ -163,26 +213,26 @@ int main() {
        //printf("PIB per Capita: Carta 1 venceu Carta 2 (%d)\n", percapitaab);
        //printf("Super poder: Carta 1 venceu Carta 2 (%d)\n", superpoderab);
 
-       if( populacaoa1 > populacaob1){
-        printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
-        printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
-        printf("Carta n°1 %s venceu! \n",cidadea1);
-       }
-       else {
-        printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
-        printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
-        printf("Carta n°2 %s venceu! \n",cidadeb1);
+       //if( populacaoa1 > populacaob1){
+       //printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
+       //printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
+       //printf("Carta n°1 %s venceu! \n",cidadea1);
+       //}
+       //else {
+       //printf("Carta 1 - %s: %d \n", cidadea1, populacaoa1);
+       //printf("Carta 2 -  %s: %d \n",cidadeb1,populacaob1);
+       //printf("Carta n°2 %s venceu! \n",cidadeb1);
         
-       }
+       
 
 
 
 
 
-  
-
+        
 
 
   return 0;
-                                                                         } 
-                                                                         
+      
+                                                                          
+    }                                                                    
