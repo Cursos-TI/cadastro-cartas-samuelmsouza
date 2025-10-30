@@ -250,14 +250,14 @@ int main() {
         break;
 
         case 5:
-          if (densidadea1 > densidadeb1)
+          if (densidadea1 < densidadeb1)
           {
           printf("**Densidade Demográfica** \n");
           printf("Carta 1- %s: %f \n", cidadea1, densidadea1);
           printf("Carta 2- %s: %f \n", cidadeb1, densidadeb1);
           printf("Carta n°1 %s venceu! \n", cidadea1);
         }
-         else if (densidadea1 ==densidadeb1)
+         else if (densidadea1 == densidadeb1)
          {
           printf("As Cartas empataram! \n");
          }
